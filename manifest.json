@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "MindCasket",
+    "version": "0.1",
+
+    "icons": {
+        "16": "doc16.png",
+        "32": "doc32.png",
+        "48": "doc48.png",
+        "128": "doc128.png"
+    },
+
+        "permissions": [
+             "http://translate.yandex.net/*"
+        ],
+
+    "browser_action": {
+        "default_title": "MindCasket",
+        "default_icon": "doc48.png",
+       "default_popup": "popup.html"
+  }
+}
