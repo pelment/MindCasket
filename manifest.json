@@ -3,21 +3,20 @@
 
     "name": "MindCasket",
     "version": "0.1",
-
+	"description" : "Организация базы знаний",
     "icons": {
-        "16": "doc16.png",
-        "32": "doc32.png",
-        "48": "doc48.png",
-        "128": "doc128.png"
+        "16": "imgs/doc16.png",
+        "32": "imgs/doc32.png",
+        "48": "imgs/doc48.png",
+        "128": "imgs/doc128.png"
     },
-
-        "permissions": [
-             "http://translate.yandex.net/*"
-        ],
+    "permissions": [
+		 "tabs"
+    ],
 
     "browser_action": {
         "default_title": "MindCasket",
-        "default_icon": "doc48.png",
+        "default_icon": "imgs/doc48.png",
        "default_popup": "popup.html"
   }
 }

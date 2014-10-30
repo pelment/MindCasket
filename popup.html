@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="cp1251">
     <script src="jquery.js"></script>
-    <script src="popup.js"></script>
+    <script src="js/popup.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/add.js"></script>
+	<link rel="stylesheet" href="css/button.css" type="text/css" />
     <title></title>
 </head>
-<body>
-    <textarea id="input"></textarea><br>
-    <input id="btn_submit" type="submit"><br>
-    <div id="result"></div>
+<body bgcolor="#acdb3d">
+	<div id="add">
+		<form>
+			<fieldset>
+			<legend>Добавить в хранилище</legend>
+			<table>
+			<tr>
+			<tr id="add_tr">
+				<td> <button type="button" class="add button">Добавить</button></td>
+			</tr>
+				<td nowrap="true">
+					<textarea class="add" id="doc_name">Название</textarea>
+				</td>
+			</tr>				
+			<tr>
+				<td nowrap="true">
+					<textarea disabled class="add" id="doc_link">Ссылка</textarea>
+				</td>
+			</tr>
+			</table>
+			</fieldset>
+		</form>
+	</div>
+	<div id="search">
+		<form>
+			<fieldset>
+			<legend>Поиск по хранилищу</legend>
+			<tr>
+				<td nowrap="true">
+					<textarea id="search_area">Поиск</textarea>
+					<button class="button search" type="button">
+						<img class="search_img" alt="Поиск" src="imgs/search.png"><img/>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Результаты поиска</p>
+				</td>
+			</tr>
+			</fieldset>
+		</form>
+	</div>
 </body>
 </html>
