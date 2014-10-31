@@ -52,12 +52,18 @@ button.add{
 	width:32px;
 	height:32px;	
 	line-height:32px;
-	float:right;
+}
+
+button.search {
+	margin-right: -1px;
+	float: right;
 }
 
 img.search_img {
-	width:23px;
-	height:23px;
+	width:31px;
+	height:31px;
+	margin-top: -1px;
+	margin-left: -6px;
 }
 
 .input {
@@ -73,6 +79,18 @@ textarea.add  {
 
 textarea#search_area  {
 	width: 120px;
+	height: 26px;
+	resize: vertical;
+}
+
+textarea#email {
+	width: 160px;
+	height: 26px;
+	resize: none;
+}
+
+textarea#post_text {
+	width: 160px;
 	height: 26px;
 	resize: vertical;
 }

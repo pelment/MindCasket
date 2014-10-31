@@ -6,7 +6,7 @@
     <script src="js/popup.js"></script>
 	<script src="js/search.js"></script>
 	<script src="js/add.js"></script>
-	<link rel="stylesheet" href="css/button.css" type="text/css" />
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
     <title></title>
 </head>
 <body bgcolor="#acdb3d">
@@ -15,10 +15,10 @@
 			<fieldset>
 			<legend>Добавить в хранилище</legend>
 			<table>
-			<tr>
 			<tr id="add_tr">
 				<td> <button type="button" class="add button">Добавить</button></td>
 			</tr>
+			<tr>
 				<td nowrap="true">
 					<textarea class="add" id="doc_name">Название</textarea>
 				</td>
@@ -36,9 +36,12 @@
 		<form>
 			<fieldset>
 			<legend>Поиск по хранилищу</legend>
+			<table>
 			<tr>
 				<td nowrap="true">
 					<textarea id="search_area">Поиск</textarea>
+				</td>
+				<td>
 					<button class="button search" type="button">
 						<img class="search_img" alt="Поиск" src="imgs/search.png"><img/>
 					</button>
@@ -49,6 +52,31 @@
 					<p>Результаты поиска</p>
 				</td>
 			</tr>
+			</table>
+			</fieldset>
+		</form>
+	</div>
+	<div id="post">
+		<form action="mailto:blond.programmist@gmail.com" type="post" enctype="text/plain"> 
+			<fieldset>
+			<legend>Отправить себе напоминание</legend>
+			<table>
+				<tr>
+					<td nowrap="true">
+						<textarea disabled id="email">blond.programmist@gmail.com</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td nowrap="true"> 
+						<button class="button add" type="submit">Отправить</button>
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<textarea id="post_text">Текст...</textarea>
+					</td>
+				</tr>
+			</table>
 			</fieldset>
 		</form>
 	</div>
